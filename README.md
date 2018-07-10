@@ -2,12 +2,10 @@
 https://www.hackbay.de/
 
 ## Index
-[1. Idea](#idea)
-
-[2. Solution](#solurion)
-
+[1. Idea](#idea)  
+[2. Solution](#solurion)  
 [3. Design](#design)  
-[4. Technology](#technology)   
+[4. Technology](#technology)    
 [5. The Code](#thecode)  
 [6. MindSphere Setup](#MindSpheresetup)  
 [7. Furthre Enhancement](#FurthreEnhancement)  
@@ -17,8 +15,8 @@ https://www.hackbay.de/
 <a name="idea"/>
 ***Idea***  
 bla bla bla  
-
-
+  
+  
 <a name="solurion"/>
 ***Solurion***  
 bla bla bla  
