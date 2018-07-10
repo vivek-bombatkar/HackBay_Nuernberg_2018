@@ -1,9 +1,8 @@
 
 
-# HackBay_Nuernberg_2018  
-`https://www.hackbay.de/`  
+# HackBay_Nuernberg_2018    
 
-***This project was created under 48 hours hackathon (HackBay) for Siemens, MindSphere in Nuremberg.***  
+***This project was created under 48 hours hackathon ([HackBay](https://www.hackbay.de/)) for Siemens, MindSphere in Nuremberg.***  
 
 
 ## Index
@@ -15,10 +14,7 @@
 [6. MindSphere Setup](#MindSpheresetup)  
 [7. Furthre Enhancement](#FurthreEnhancement)  
 
-
-
-<a name="idea" />
-### Idea    
+## <a name="idea"></a>Idea    
 bla bla bla  
   
 <a name="Solution" />
