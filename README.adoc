@@ -4,8 +4,8 @@
 
 # HackBay_Nuernberg_2018
 
-https://www.hackbay.de/
-This project was created under 48 hours hackathon (HackBay) for Siemens, MindSphere in Nuremberg.
+https://www.hackbay.de/  
+***This project was created under 48 hours hackathon (HackBay) for Siemens, MindSphere in Nuremberg.***  
 
 toc::[]
 
