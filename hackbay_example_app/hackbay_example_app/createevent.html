@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebApp - Create Event</title>
+    <!-- Custom Siemens Theme -->
+    <link href="siemens-theme.css" rel="stylesheet">
+
+    <!-- Moment.js -->
+    <script src="components/moment-js/moment.js" ></script>
+    <!-- <script src="components/moment-js/moment-with-locales.js" ></script> -->
+</head>
+
+<script>
+
+
+
+function getParams() {
+    var timestamp = moment().utc();
+    timestamp = dateTimeString(timestamp);
+    var assetId = document.getElementById("assetId").value;
+    var severity = document.getElementById("severity").value;
+    var description = document.getElementById("description").value;
+
+    return {
+        "timestamp": timestamp,
+        "entityId": assetId,
+        "severity": parseInt(severity),
+        "description": description
+    }
+}
+
+function postEvent() {
+    params = getParams()
+    if (params === null) {
+        console.error('Please enter Asset ID, Severity and Description.');
+        return;
+    }
+
+    reqBody = {
+        typeId: "com.siemens.mindsphere.eventmgmt.event.type.MindSphereStandardEvent", // standard event type
+        timestamp: params.timestamp,
+        entityId: params.entityId,
+        severity: params.severity,
+        description: params.description,
+        code: "Event_TestCode",
+        acknowledged: false
+    }
+
+    // Set url
+    var eventUrl = "/api/eventmanagement/v3/events";
+
+    // Create request to get events
+    var eventReq = new XMLHttpRequest();
+    eventReq.open("POST", eventUrl, false); // 'false' makes the request synchronous
+    eventReq.setRequestHeader('Content-type','application/json; charset=utf-8');
+
+    // Get events for asset
+    var response = "Create new event: not successful";
+    var status = "Create new event: not successful";
+    eventReq.onreadystatechange = function() {
+        if (eventReq.readyState === 4) { // When readyState property is 4 and status property is 200, the response is ready
+            if (eventReq.status === 201) { // Response code 'Created'
+                console.log('POST event response: ' + eventReq.response);
+                response = eventReq.response;
+                status = eventReq.status + ": Event created";
+                var jsonResponse = JSON.parse(eventReq.response);
+            }
+            else {
+                console.error('Request status text: ' + eventReq.statusText);
+            }
+        }
+    }
+    console.log('POST event url: ' + eventUrl);
+    console.log('POST event body: ' + JSON.stringify(reqBody));
+    eventReq.send(JSON.stringify(reqBody));
+
+    displayResult(response, status);
+}
+
+function displayResult(response, status){
+    // Display status
+    document.getElementById("status").value = status;
+    
+    // Display status
+    document.getElementById("response").value = JSON.stringify(reqBody, null, 2);
+}
+
+// Convert moment.js (date time) object to display string
+self.dateTimeString = function(obj) {
+    try {
+        var displayString = obj.format('YYYY-MM-DDTHH:mm:ss')+'.000Z';
+    } 
+    catch (ex) {
+        console.log("Error:" + ex);
+        console.log("given parameter is not a moment object:" + obj);
+    }
+    
+    return displayString;
+}
+</script>
+
+<!-- MindSphere OS bar -->
+<script src="https://static.eu1.mindsphere.io/osbar/js/main.min.js"></script>
+<script>
+  _msb.init({
+      title: "WebApp - Create Event",
+      appId: "_mscontent"
+  });
+</script>
+
+<body>
+    <div id="_mscontent">
+        <!-- Side Navigation-->
+        <div class="sidenav">
+            <img src="siemens.svg" class="sidenav-title">
+            <a href="deviceassetlist.html">Device Assets</a>
+            <a href="timeseries.html">TS Aggregates</a>
+            <a href="eventlist.html">Events</a>
+            <a href="createevent.html">Create Event</a>
+        </div>
+        <!-- Side Content -->
+        <div class="main">
+            <div>
+                <div style="padding: 10px;">Please enter Asset ID, Severity and Description</div>
+            </div>
+            <br>
+            <div style="padding: 10px;">
+                Asset ID: <input type="text" id="assetId">
+                Severity: <select id="severity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select><br><br> 
+                Description: <textarea id="description" rows="2" cols="50"></textarea><br><br>
+                <button onclick="postEvent()">Create Event</button><br><br>
+            </div>
+            <div style="padding: 10px;">
+                Request status:<br>
+                <textarea id="status" rows="1" cols="50"></textarea>'
+            </div>
+            <div style="padding: 10px;">
+                Request response:<br> 
+                <textarea id="response" rows="20" cols="100"></textarea>'
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

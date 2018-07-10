@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebApp - Events</title>
+    <!-- Custom Siemens Theme -->
+    <link href="siemens-theme.css" rel="stylesheet">
+</head>
+
+<script>
+
+window.onload = function() {
+    eventData = getEventData();
+
+    var htmlStr = "";
+    if (eventData != null) {
+        // Set title
+        htmlStr = 
+        'Asset ID: ' + eventData.assetId;
+    }
+    else {
+        // Set message
+        htmlStr = 
+        '<p>Asset is not selected.</p>'+
+        '<p>Please go to "Device Assets" page to select an asset.</p>';
+    }
+    document.getElementById("tsTitle").innerHTML = htmlStr;
+
+    fetchEvents(eventData);
+}
+
+function getEventData() {
+    var linkParams = localStorage.getItem("linkParams");
+    
+    try {
+        var linkParams = JSON.parse(linkParams);
+        var assetId = linkParams.assetId;
+        return {
+            assetId: assetId
+        }
+    } catch (ex) {
+        console.log("Error: " + ex)
+        console.log({ "Could not json parse: ": linkParams});
+        return null;
+    }
+}
+
+
+function fetchEvents(eventData) {
+    if (eventData === null) {
+        console.error('Asset ID does not exist.');
+        return;
+    }
+
+    // Set url
+    var eventUrl = "/api/eventmanagement/v3/events";
+    // Filter asset id
+    var eventFilter = '{"entityId": {"eq": {"value": "' + eventData.assetId + '"}}}'; // entity ID is asset ID
+    // alternate filter entry: '{"entityId": "' + eventData.assetId + '"}';
+
+    eventUrl = eventUrl + '?filter=' + encodeURIComponent(eventFilter)
+
+    // Create request to get events
+    var eventReq = new XMLHttpRequest();
+    eventReq.open("GET", eventUrl, false); // 'false' makes the request synchronous
+
+    // Get events for asset
+    var eventList = [];
+    eventReq.onreadystatechange = function() {
+        if (eventReq.readyState === 4) { // When readyState property is 4 and status property is 200, the response is ready
+            if (eventReq.status === 200) {
+                console.log('GET events response: ' + eventReq.response);
+                var jsonResponse = JSON.parse(eventReq.response);
+                eventList = jsonResponse['_embedded']['events'];
+            }
+            else {
+                console.error('Request status text: ' + eventReq.statusText);
+            }
+        }
+    }
+    console.log('GET events: ' + eventUrl);
+    eventReq.send(null);
+
+    fillTable(eventList);
+}
+
+function fillTable(eventList){
+    var htmlStr = '<table name="eventtable" id="common_table">';
+ 
+    // Display event data
+    eventList.forEach(function(event) {
+        htmlStr = htmlStr + '<tr id="common_table_level2">'+
+            '<td>'+
+                '<label>Event ID: ' + event.id + '</label>'+
+            '</td>'+
+            '<td>'+
+                '<label>Severity: ' + event.severity + '</label>'+
+            '</td>'+
+            '<td>'+
+                '<label>Timestamp: ' + event.timestamp + '</label>'+
+            '</td>'+
+            '<td>'+
+                '<label>Description: ' + event.description + '</label>'+
+            '</td>'+
+        '</tr>';
+    });
+
+    htmlStr = htmlStr + '</table>'; 
+
+    document.getElementById("eventObj").innerHTML = htmlStr;
+}
+
+window.onunload = function() {
+    localStorage.clear();
+}
+</script>
+
+<!-- MindSphere OS bar -->
+<script src="https://static.eu1.mindsphere.io/osbar/js/main.min.js"></script>
+<script>
+  _msb.init({
+      title: "WebApp - Events",
+      appId: "_mscontent"
+  });
+</script>
+
+<body>
+    <div id="_mscontent">
+        <!-- Side Navigation-->
+        <div class="sidenav">
+            <img src="siemens.svg" class="sidenav-title">
+            <a href="deviceassetlist.html">Device Assets</a>
+            <a href="timeseries.html">TS Aggregates</a>
+            <a href="eventlist.html">Events</a>
+            <a href="createevent.html">Create Event</a>
+        </div>
+        <!-- Side Content -->
+        <div class="main">
+            <div>
+                <div id="tsTitle" style="padding: 10px;"></div>
+            </div>
+            <div id="eventObj"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebApp - Time Series Aggregates</title>
+    
+    <!-- Custom Siemens Theme -->
+    <link href="siemens-theme.css" rel="stylesheet">
+    
+    <!-- jQuery & jQuery-UI -->
+    <link href="components/jquery-ui/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" >
+    <script src="components/jquery/jquery-3.3.1.min.js"></script>
+    <script src="components/jquery-ui/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Air Datepicker -->
+    <link href="components/air-datepicker/dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <script src="components/air-datepicker/dist/js/datepicker.min.js"></script>
+    
+    <!-- Include English language to datepicker-->
+    <script src="components/air-datepicker/dist/js/i18n/datepicker.en.js"></script>
+    
+    <!-- Chart.js-->
+    <script src="components/chart-js/Chart.bundle.min.js"></script>
+
+    <!-- Moment.js -->
+    <script src="components/moment-js/moment.js" ></script>
+    <script src="components/moment-js/moment-with-locales.js" ></script>
+</head>
+
+<script>
+
+// Date picker
+$(function() {
+    $("#datepicker_from").datepicker();
+});
+$(function() {
+    $("#datepicker_to").datepicker();
+});
+
+window.onload = function() {
+    assetData = getAssetData();
+
+    var htmlStr = "";
+    if (assetData != null) {
+        // Set title
+        htmlStr = 
+        'Asset ID: ' + assetData.assetId + '  |  '+
+        'Aspect Name: ' + assetData.aspectName + '  |  '+
+        'Variable Name: ' + assetData.variableName;
+    }
+    else {
+        // Set message
+        htmlStr = 
+        '<p>Variable is not selected.</p>'+
+        '<p>Please go to "Device Assets" page to select a variable.</p>';
+    }
+    document.getElementById("tsTitle").innerHTML = htmlStr;
+}
+
+function getAssetData() {
+    var linkParams = localStorage.getItem("linkParams");
+    
+    try {
+        var linkParams = JSON.parse(linkParams);
+        var assetId = linkParams.assetId;
+        var aspectName = linkParams.aspectName;
+        var variableName = linkParams.variableName;
+        return {
+            assetId: assetId,
+            aspectName: aspectName,
+            variableName: variableName
+        }
+    } catch (ex) {
+        console.log("Error: " + ex)
+        console.log({ "Could not json parse: ": linkParams});
+        return null;
+    }
+}
+
+function refreshChart() {
+    assetData = getAssetData();
+
+    if (assetData === null) {
+        console.error('Asset data does not exist.');
+        return;
+    }
+
+    // Get datepicker data
+    var start = $("#datepicker_from").datepicker("getDate");
+    start = start[0].value;
+    start = moment(start);
+    start = dateTimeString(start);
+    var end = $("#datepicker_to").datepicker("getDate");
+    end = end[0].value;
+    end = moment(end);
+    end = dateTimeString(end);
+
+    // Get chart data and display chart
+    var chartData = getTSData(assetData.assetId, assetData.aspectName, assetData.variableName, start, end);
+    displayTSChart(chartData.chartValueList, chartData.xLabelList, chartData.datasetLabel);
+}
+
+function getTSData(assetId, aspectName, variableName, start, end) {
+    // Set url
+    var fromDateTime = '?from=' + start; 
+    var toDateTime = '&to=' + end; 
+    var intervalValue = '&intervalValue=1';
+    var intervalUnit = '&intervalUnit=minute';
+    var selectVariable = '&select=' + variableName;
+    var aggrParams =  fromDateTime + toDateTime + intervalValue + intervalUnit + selectVariable;
+    var aggrUrl = '/api/iottimeseries/v3/aggregates/' + assetId + '/' + aspectName + aggrParams;
+
+    // Create request to get aggregated timeseries
+    var aggrReq = new XMLHttpRequest();
+    aggrReq.open("GET", aggrUrl, false); // 'false' makes the request synchronous
+
+    // Chart data
+    var chartValueList = []; 
+    var xLabelList = [] // x-axis
+    var datasetLabel = variableName;
+
+    // Get aggregated timeseries
+    aggrReq.onreadystatechange = function() {
+        if (aggrReq.readyState === 4) { // When readyState property is 4 and status property is 200, the response is ready
+            if (aggrReq.status === 200) {
+                console.log('GET aggregates response: ' + aggrReq.response);
+                var jsonResponse = JSON.parse(aggrReq.response);
+                jsonResponse.forEach(function(element) {
+                    if(element.hasOwnProperty(variableName)) {
+                        chartValueList.push(element[variableName].firstvalue);
+                        chartValueList.push(element[variableName].minvalue);
+                        chartValueList.push(element[variableName].maxvalue);
+                        chartValueList.push(element[variableName].lastvalue);
+                        xLabelList.push(element[variableName].firsttime);
+                        xLabelList.push(element[variableName].mintime);
+                        xLabelList.push(element[variableName].maxtime);
+                        xLabelList.push(element[variableName].lasttime);
+                    }
+                });
+            }
+            else {
+                console.error('Request status text: ' + aggrReq.statusText);
+            }
+        }
+    }
+    console.log('GET aggregates: ' + aggrUrl);
+    aggrReq.send(null);
+
+    return {
+        chartValueList: chartValueList, 
+        xLabelList: xLabelList, 
+        datasetLabel: datasetLabel
+    };
+}
+
+function displayTSChart(chartValueList, xLabelList, datasetLabel) {
+    // var htmlStr = '<canvas id="line-chart" width="800" height="450"></canvas>';
+    // document.getElementById("tsChart").innerHTML = htmlStr;
+
+    var myLineChart = new Chart(document.getElementById("line-chart"), {
+        type: 'line',
+        data: {
+            labels: xLabelList,
+            datasets: [{ 
+                data: chartValueList,
+                label: datasetLabel,
+                borderColor: "#3e95cd",
+                fill: false
+            }]
+        }
+    });
+}
+
+// Convert moment.js (date time) object to display string
+function dateTimeString(obj) {
+    try {
+        var displayString = obj.format('YYYY-MM-DDTHH:mm')+':00Z';
+    } 
+    catch (ex) {
+        console.log("Error:" + ex);
+        console.log("given parameter is not a moment object:" + obj);
+    }
+    
+    return displayString;
+}
+
+window.onunload = function() {
+    localStorage.clear();
+}
+</script>
+
+<!-- MindSphere OS bar -->
+<script src="https://static.eu1.mindsphere.io/osbar/js/main.min.js"></script>
+<script>
+  _msb.init({
+      title: "WebApp - Time Series Aggregates",
+      appId: "_mscontent"
+  });
+</script>
+
+<body>
+    <div id="_mscontent">
+        <!-- Side Navigation-->
+        <div class="sidenav">
+            <img src="siemens.svg" class="sidenav-title">
+            <a href="deviceassetlist.html">Device Assets</a>
+            <a href="timeseries.html">TS Aggregates</a>
+            <a href="eventlist.html">Events</a>
+            <a href="createevent.html">Create Event</a>
+        </div>
+        <!-- Side Content -->
+        <div class="main">
+            <div>
+                <div id="tsTitle" style="padding: 10px;"></div>
+            </div>
+            <div style="padding: 10px;">
+                From: <input type="text" id="datepicker_from" data-timepicker="true" data-language="en">
+            </div>
+            <div style="padding: 10px;">
+                To: <input type="text" id="datepicker_to" data-timepicker="true" data-language="en">
+            </div>
+            <div style="padding: 10px;">
+                <button type="submit" onclick="refreshChart()">Display TS Aggregates</button>
+            </div>
+            <div>
+                <!-- <div id="tsChart"></div> -->
+                <canvas id="line-chart" width="650" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

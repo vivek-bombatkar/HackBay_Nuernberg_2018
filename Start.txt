@@ -1,0 +1,12 @@
+
+*** Cloud Foundry Login
+cf login -sso -a https://api.cf.eu1.mindsphere.io
+
+*** Tenant URL
+https://socgerde.eu1.mindsphere.io
+
+*** Developer Documentation
+https://developer.mindsphere.io/
+
+*** User Documentation
+https://documentation.mindsphere.io/#/kiosk

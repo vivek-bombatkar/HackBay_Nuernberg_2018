@@ -1,0 +1,8 @@
+applications:
+- name: mywebapp
+  instances: 1
+  buildpack: staticfile_buildpack
+  memory: 100M
+  disk_quota: 250MB
+  host: mywebapp-xx-socgerde
+  domain: apps.eu1.mindsphere.io
