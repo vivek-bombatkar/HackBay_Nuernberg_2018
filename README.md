@@ -8,7 +8,7 @@
 
 ## Index
 [1. Idea](#idea)  
-[2. Solution](#solurion)  
+[2. Solution](#Solution)  
 [3. Design](#design)  
 [4. Technology](#technology)    
 [5. The Code](#thecode)  
@@ -18,48 +18,20 @@
 
 
 <a name="idea" />
-
 ***Idea***  
 bla bla bla  
   
-  
-<a name="solurion" />
-***Solurion***  
+<a name="Solution" />
+***Solution***  
 bla bla bla  
-
 
 <a name="idea"/>
 ***Idea***  
 bla bla bla  
 
-
 <a name="idea"/>
 ***Idea***  
 bla bla bla  
 
-
-<a name="idea"/>
-***Idea***  
-bla bla bla  
-
-
-<a name="idea"/>
-***Idea***  
-bla bla bla  
-
-
-<a name="idea"/>
-***Idea***  
-bla bla bla  
-
-
-<a name="idea"/>
-***Idea***  
-bla bla bla  
-
-
-<a name="idea"/>
-***Idea***  
-bla bla bla  
-
+<br />
 <img src="http://www.umc.com/english/design/images/Design_re_flow.gif" width="130" height="100" />
