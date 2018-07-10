@@ -7,6 +7,7 @@
 
 ## Index
 [1. Idea](#idea)  
+[2. Problem Statment](#ProblemStatment)
 [2. Solution](#Solution)  
 [3. Design](#design)  
 [4. Technology](#technology)    
@@ -19,12 +20,10 @@
 ## <a name="idea"></a>Idea    
 bla bla bla  
 
-## <a name="Solution"></a>Solution    
-bla bla bla  
+## <a name="ProblemStatment"></a>Problem Statment    
 
-
-| Status | Image |
-| --- | --- |
-| Healthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> |
-| Unhealthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> |
+| Status | Example1 | Example1 | 
+| --- | --- |  --- |
+| Healthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | 
+| Unhealthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> |
 
