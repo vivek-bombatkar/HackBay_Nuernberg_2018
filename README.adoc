@@ -2,18 +2,16 @@
 :toc-title:
 :toclevels: 99
 
-# react-popover
-
 # HackBay_Nuernberg_2018
 https://www.hackbay.de/
-
+This project was created under 48 hours hackathon (HackBay) for Siemens, MindSphere in Nuremberg.
 
 toc::[]
 
-## Index  
 ### Idea  
 asdasda  
 asdada  
+
 ### Solution
 asdasd  
 asasdas 
