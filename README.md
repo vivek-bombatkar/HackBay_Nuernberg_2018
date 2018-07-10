@@ -18,7 +18,7 @@
 
 
 <a name="idea" />
-***Idea***  
+### Idea    
 bla bla bla  
   
 <a name="Solution" />
