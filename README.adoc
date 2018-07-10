@@ -27,4 +27,4 @@ gdghgbf
 
 ## The Code
 
-image:"http://www.umc.com/english/design/images/Design_re_flow.gif"
+image:http://www.umc.com/english/design/images/Design_re_flow.gif
