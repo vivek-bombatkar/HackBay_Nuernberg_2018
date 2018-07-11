@@ -57,7 +57,7 @@
 
 ## <a name="Solution"></a>Solution
 
-<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/idea.jpeg" width="450" height="400" />
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/idea.jpeg" width="450" height="350" />
 
 
 ## <a name="technology"></a>Technology
@@ -79,7 +79,7 @@
 | Software Upgrade in process.;The System will reboot after the upgrade is complete;Software Upgrade;Scan Engine;GHI;Print/ Copy Engine;Finishing;Copy Controller;Network Controller;PQRS;DO NOT turn off the machine;while upgrade is in progress.;The System will automatically;reboot and print out a status report;upon completion.;01 |
 
 
-<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/detect_text_demo.gif" width="600" height="500" >
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/detect_text_demo.gif" width="600" height="470" >
 
 
 2. [MindSphere Services API](https://developer.mindsphere.io/apis/index.html)
