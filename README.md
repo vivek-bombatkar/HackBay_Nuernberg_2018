@@ -66,7 +66,7 @@
 1. [Google Cloud Vision API](https://cloud.google.com/vision/docs/)
     * Cloud Vision API allows developers to easily integrate vision detection features within applications, including image labeling, face and landmark detection, optical character recognition (OCR), and tagging of explicit content.
     * Other alternative,
-        * [g2crowd.com](https://www.g2crowd.com/products/google-cloud-vision-api/competitors/alternatives)
+        * OpenCV, Deepdream, SimpleCV, [g2crowd.com](https://www.g2crowd.com/products/google-cloud-vision-api/competitors/alternatives)
         * Use [Tensorflow](https://www.tensorflow.org/tutorials/images/image_recognition)
 
 > Tensorflow is library for machine learning which means that it has both high and low level APIs
