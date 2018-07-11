@@ -19,10 +19,10 @@
 
 ## <a name="idea"></a>Idea    
 
-* Feed the MindSphere with information processed from image, video and voice recorded from the devices.***
+* Feed the MindSphere with information processed from image, video and voice recorded from the devices.
 > `Dave` could take a snap from his cell phone and generate an event in MindSphere.
 > `Dave` don't have to touch the device to get read its status.
->
+
 
 <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/big_picture.JPG" width="250" height="200" />
 
