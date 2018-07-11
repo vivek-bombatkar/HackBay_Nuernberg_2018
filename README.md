@@ -1,19 +1,18 @@
-<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_hackbay.JPG"  width="250" height="100">
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_hackbay.JPG"  width="250" height="800">
 
 # HackBay_Nuernberg_2018    
 <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_nextGen.jpg" >
 
-*** `nextGeneration` is the project was created under 48 hours hackathon ([HackBay](https://www.hackbay.de/), [zollhof](https://www.zollhof.de/)) for Siemens, MindSphere in Nuremberg.***
+`nextGeneration` is the project was created under 48 hours hackathon ([HackBay](https://www.hackbay.de/), [zollhof](https://www.zollhof.de/)) for Siemens, MindSphere in Nuremberg.
 
 ## Index
 [1. Idea](#idea)  
 [2. Problem Statment](#ProblemStatment)  
 [3. Solution](#Solution)  
-[4. Design](#design)  
-[5. Technology](#technology)    
-[6. MindSphere Setup and API](#MindSpheresetup)  
-[7. Furthre Enhancement](#FurthreEnhancement)
-[8. Extra](#Extra)
+[4. Technology](#technology)
+[5. MindSphere Setup and API](#MindSpheresetup)
+[6. Furthre Enhancement](#FurthreEnhancement)
+[7. Extra](#Extra)
 [8. Thanks](#Thanks)
 
 
@@ -65,7 +64,7 @@
 | Image &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Text extract from image |
 | --------------------------- | --- |
 |<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_1.JPG" width="130" height="100" /> |  Select a service;Guest;fiery;Workflow;Scanning;Copy;Fax;Fiery;Extended Service;Services Home;Services;Job Status;Machine Status;Energy Saver |
-| <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.jpg" width="130" height="100" /> | Software Upgrade in process.;The System will reboot after the upgrade is complete;Software Upgrade;Scan Engine;GHI;Print/ Copy Engine;Finishing;Copy Controller;Network Controller;PQRS;DO NOT turn off the machine;while upgrade is in progress.;The System will automatically;reboot and print out a status report;upon completion.;01 |
+|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.jpg" width="130" height="100" /> | Software Upgrade in process.;The System will reboot after the upgrade is complete;Software Upgrade;Scan Engine;GHI;Print/ Copy Engine;Finishing;Copy Controller;Network Controller;PQRS;DO NOT turn off the machine;while upgrade is in progress.;The System will automatically;reboot and print out a status report;upon completion.;01 |
 
 
 ## <a name="Extra"></a>Extra
@@ -75,3 +74,9 @@
 |<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/scrum_board_1.jpeg" width="230" height="200" /> |
 |<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/scrum_board_2.jpeg" width="230" height="200" /> |
 
+
+## <a name="Thanks"></a>Thanks
+
+> We the Team of Two and half!
+
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/scrum_board_1.jpeg" width="230" height="200" />
