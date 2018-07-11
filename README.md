@@ -26,12 +26,12 @@
 
 | Status | Example1 | Example1 | 
 | --- | --- |  --- |
-| Healthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | 
-| Unhealthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> |
+| Healthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_1.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_3.JPG" width="130" height="100" /> |
+| Unhealthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_4.JPG" width="130" height="100" /> |
 
 ## <a name="Solution"></a>Solution
 
-<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/idea.jpeg" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" />
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/idea.jpeg" width="250" height="200" />
 
 
 ## <a name="technology"></a>Technology
@@ -39,14 +39,14 @@
 
 | Image | Text extract from image |
 | --- | --- |  
-|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> |  sdasd | 
-| <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | dasdasd |
+|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_1.JPG" width="130" height="100" /> |  sdasd |
+| <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.JPG" width="130" height="100" /> | dasdasd |
 
 
 ## <a name="Extra"></a>Extra
 
 | The scrum board |
-| --- | 
-|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> |
-| <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> |
+| --- |
+|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/scrum_board_1.jpeg" width="130" height="100" /> |
+|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/scrum_board_2.jpeg" width="130" height="100" /> |
 
