@@ -126,4 +126,4 @@ Access Token=""
 
 > We the Team of Two and half!
 
-<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/scrum_board_1.jpeg" width="230" height="200" />
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/the_team.jpg"  />
