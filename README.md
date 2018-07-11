@@ -1,9 +1,7 @@
 # HackBay_Nuernberg_2018
 `nextGeneration` is the project was created under 48 hours hackathon ([HackBay](https://www.hackbay.de/), [zollhof](https://www.zollhof.de/)) for Siemens, MindSphere in Nuremberg.
 
-
 <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_hackbay.JPG"  width="250" height="80">
-
 <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_nextGen.jpg" >
 
 
@@ -11,7 +9,7 @@
 [1. Idea](#idea)  
 [2. Problem Statment](#ProblemStatment)  
 [3. Solution](#Solution)  
-[4. Technology](#technology) 
+[4. Technology](#technology)   
 [5. Furthre Enhancement](#FurthreEnhancement)  
 [6. Extra](#Extra)  
 [7. Thanks](#Thanks)
