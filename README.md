@@ -3,9 +3,7 @@
 # HackBay_Nuernberg_2018    
 <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_nextGen.jpg" >
 
-***This project was created under 48 hours hackathon ([HackBay](https://www.hackbay.de/), [zollhof](https://www.zollhof.de/)) for Siemens, MindSphere in Nuremberg.***  
-***`nextGeneration` process image, read the device status/information, And feed to MindSphere.***
-
+*** `nextGeneration` is the project was created under 48 hours hackathon ([HackBay](https://www.hackbay.de/), [zollhof](https://www.zollhof.de/)) for Siemens, MindSphere in Nuremberg.***
 
 ## Index
 [1. Idea](#idea)  
@@ -20,6 +18,14 @@
 
 
 ## <a name="idea"></a>Idea    
+
+* Feed the MindSphere with information processed from image, video and voice recorded from the devices.***
+> `Dave` could take a snap from his cell phone and generate an event in MindSphere.
+> `Dave` don't have to touch the device to get read its status.
+>
+
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/big_picture.JPG" width="250" height="200" />
+
 
 * What is `IoT`?
     * IoT is the network of physical electronic devices, which enables to connect and exchange data without or with less interaction of human.
