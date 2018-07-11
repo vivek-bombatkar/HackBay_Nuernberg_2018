@@ -12,10 +12,12 @@
 [2. Problem Statment](#ProblemStatment)  
 [3. Solution](#Solution)  
 [4. Technology](#technology)
-[5. MindSphere Setup and API](#MindSpheresetup)
-[6. Furthre Enhancement](#FurthreEnhancement)
-[7. Extra](#Extra)
-[8. Thanks](#Thanks)
+
+[5. Furthre Enhancement](#FurthreEnhancement)
+
+[6. Extra](#Extra)
+
+[7. Thanks](#Thanks)
 
 
 
@@ -98,6 +100,12 @@ Access Token=""
 
 - Trend Prediction	The Trend Prediction
     * Service predicts future values for time series using linear and non-linear regression models. It is a forecasting framework, that has many useful applications in the area of Process & Condition Monitoring.
+
+## <a name="FurthreEnhancement"></a>The Furthre
+
+- Sensor free data collection
+- IoT data capture from smart phone
+- Capture device data without manufacturer concern
 
 
 ## <a name="Extra"></a>Extra
