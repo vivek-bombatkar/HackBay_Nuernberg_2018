@@ -1,9 +1,11 @@
+# HackBay_Nuernberg_2018
+`nextGeneration` is the project was created under 48 hours hackathon ([HackBay](https://www.hackbay.de/), [zollhof](https://www.zollhof.de/)) for Siemens, MindSphere in Nuremberg.
+
+
 <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_hackbay.JPG"  width="250" height="80">
 
-# HackBay_Nuernberg_2018    
 <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_nextGen.jpg" >
 
-`nextGeneration` is the project was created under 48 hours hackathon ([HackBay](https://www.hackbay.de/), [zollhof](https://www.zollhof.de/)) for Siemens, MindSphere in Nuremberg.
 
 ## Index
 [1. Idea](#idea)  
@@ -60,12 +62,21 @@
 
 ## <a name="technology"></a>Technology
 
+1. [Google Cloud Vision API](https://cloud.google.com/vision/docs/)
+- Cloud Vision API allows developers to easily integrate vision detection features within applications, including image labeling, face and landmark detection, optical character recognition (OCR), and tagging of explicit content.
+- Other alternative,
+..* [g2crowd.com](https://www.g2crowd.com/products/google-cloud-vision-api/competitors/alternatives)
+..* Use [Tensorflow](https://www.tensorflow.org/tutorials/images/image_recognition)
+> Tensorflow is library for machine learning which means that it has both high and low level APIs
+> Google Cloud AI on the other hand is set of ML products which under the hood probably uses Tensorflow with trained models and these are aimed for non ML experts.
+
 
 | Image &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Text extract from image |
 | --------------------------- | --- |
 |<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_1.JPG" width="130" height="100" /> |  Select a service;Guest;fiery;Workflow;Scanning;Copy;Fax;Fiery;Extended Service;Services Home;Services;Job Status;Machine Status;Energy Saver |
 |<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.jpg" width="130" height="100" /> | Software Upgrade in process.;The System will reboot after the upgrade is complete;Software Upgrade;Scan Engine;GHI;Print/ Copy Engine;Finishing;Copy Controller;Network Controller;PQRS;DO NOT turn off the machine;while upgrade is in progress.;The System will automatically;reboot and print out a status report;upon completion.;01 |
 
+2.
 
 ## <a name="Extra"></a>Extra
 
