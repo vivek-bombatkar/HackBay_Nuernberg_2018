@@ -73,10 +73,10 @@
 > Google Cloud AI on the other hand is set of ML products which under the hood probably uses Tensorflow with trained models and these are aimed for non ML experts.
 
 
-| Image &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Text extract from image |
-| --------------------------- | --- |
-|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_1.JPG" width="130" height="100" /> |  Select a service;Guest;fiery;Workflow;Scanning;Copy;Fax;Fiery;Extended Service;Services Home;Services;Job Status;Machine Status;Energy Saver |
-|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.jpg" width="130" height="100" /> | Software Upgrade in process.;The System will reboot after the upgrade is complete;Software Upgrade;Scan Engine;GHI;Print/ Copy Engine;Finishing;Copy Controller;Network Controller;PQRS;DO NOT turn off the machine;while upgrade is in progress.;The System will automatically;reboot and print out a status report;upon completion.;01 |
+| Text extract from image |
+| --- |
+| Select a service;Guest;fiery;Workflow;Scanning;Copy;Fax;Fiery;Extended Service;Services Home;Services;Job Status;Machine Status;Energy Saver |
+| Software Upgrade in process.;The System will reboot after the upgrade is complete;Software Upgrade;Scan Engine;GHI;Print/ Copy Engine;Finishing;Copy Controller;Network Controller;PQRS;DO NOT turn off the machine;while upgrade is in progress.;The System will automatically;reboot and print out a status report;upon completion.;01 |
 
 
 <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/detect_text_demo.gif" width="600" height="500" >
