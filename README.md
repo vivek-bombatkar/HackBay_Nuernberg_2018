@@ -1,7 +1,7 @@
 <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_hackbay.JPG"  width="250" height="100">
 
 # HackBay_Nuernberg_2018    
-<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_nextGen.jpg.JPG" >
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_nextGen.jpg" >
 
 ***This project was created under 48 hours hackathon ([HackBay](https://www.hackbay.de/), [zollhof](https://www.zollhof.de/)) for Siemens, MindSphere in Nuremberg.***  
 ***`nextGeneration` process image, read the device status/information, And feed to MindSphere.***
