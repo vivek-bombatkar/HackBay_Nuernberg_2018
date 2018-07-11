@@ -19,13 +19,18 @@
 
 ## <a name="idea"></a>Idea    
 
-* Feed the MindSphere with information processed from image, video and voice recorded from the devices.
+> Feed the MindSphere with information processed from image, video and voice recorded from the devices.
+
 > `Dave` could take a snap from his cell phone and generate an event in MindSphere.
+
 > `Dave` don't have to touch the device to get read its status.
 
 
 <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/big_picture.JPG" />
 
+
+
+## <a name="ProblemStatment"></a>Problem Statment    
 
 * What is `IoT`?
     * IoT is the network of physical electronic devices, which enables to connect and exchange data without or with less interaction of human.
@@ -44,12 +49,6 @@
     * The system is used in applications such as automated production and vehicle fleet management.
     * E.g. `MindConnect Nano`
 
-
-
-
-
-## <a name="ProblemStatment"></a>Problem Statment    
-
 | Status | Example1 | Example1 | 
 | --- | --- |  --- |
 | Healthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_1.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_3.jpg" width="130" height="100" /> |
@@ -57,7 +56,7 @@
 
 ## <a name="Solution"></a>Solution
 
-<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/idea.jpeg" width="250" height="200" />
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/idea.jpeg" width="450" height="400" />
 
 
 ## <a name="technology"></a>Technology
@@ -73,6 +72,6 @@
 
 | The scrum board |
 | --- |
-|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/scrum_board_1.jpeg" width="130" height="100" /> |
-|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/scrum_board_2.jpeg" width="130" height="100" /> |
+|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/scrum_board_1.jpeg" width="230" height="200" /> |
+|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/scrum_board_2.jpeg" width="230" height="200" /> |
 
