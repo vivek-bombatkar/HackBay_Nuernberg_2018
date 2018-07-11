@@ -76,7 +76,26 @@
 |<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_1.JPG" width="130" height="100" /> |  Select a service;Guest;fiery;Workflow;Scanning;Copy;Fax;Fiery;Extended Service;Services Home;Services;Job Status;Machine Status;Energy Saver |
 |<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.jpg" width="130" height="100" /> | Software Upgrade in process.;The System will reboot after the upgrade is complete;Software Upgrade;Scan Engine;GHI;Print/ Copy Engine;Finishing;Copy Controller;Network Controller;PQRS;DO NOT turn off the machine;while upgrade is in progress.;The System will automatically;reboot and print out a status report;upon completion.;01 |
 
-2.
+2. [MindSphere Services API](https://developer.mindsphere.io/apis/index.html)
+- IoT File
+..* File Service to read, write and delete files: upload, update and delete files associated to assets; store metadata information, and search for files by metadata.
+```
+https://gateway.eu1.mindsphere.io/api/iotfile/v3/files/a2385c36630a48e698622be19e3f5a3c/data_file.csv
+
+assetId=a2385c36630a48e698622be19e3f5a3c
+
+Access Token=""
+```
+
+- IoT Time Series
+..* Use Time Series to create, read, update and delete dynamic data. Since time series data are always related to an asset, the instance of an asset must have been created by you beforehand.
+
+- Notification Service
+..* Use APIs or graphical user interface to send information to your users & customers via e-mail, sms or push/scheduled notification.
+
+- Trend Prediction	The Trend Prediction
+..* Service predicts future values for time series using linear and non-linear regression models. It is a forecasting framework, that has many useful applications in the area of Process & Condition Monitoring.
+
 
 ## <a name="Extra"></a>Extra
 
