@@ -18,6 +18,7 @@
 [8. Thanks](#Thanks)
 
 
+
 ## <a name="idea"></a>Idea    
 
 > Feed the MindSphere with information processed from image, video and voice recorded from the devices.
@@ -63,11 +64,13 @@
 ## <a name="technology"></a>Technology
 
 1. [Google Cloud Vision API](https://cloud.google.com/vision/docs/)
-- Cloud Vision API allows developers to easily integrate vision detection features within applications, including image labeling, face and landmark detection, optical character recognition (OCR), and tagging of explicit content.
-- Other alternative,
-..* [g2crowd.com](https://www.g2crowd.com/products/google-cloud-vision-api/competitors/alternatives)
-..* Use [Tensorflow](https://www.tensorflow.org/tutorials/images/image_recognition)
+    * Cloud Vision API allows developers to easily integrate vision detection features within applications, including image labeling, face and landmark detection, optical character recognition (OCR), and tagging of explicit content.
+    * Other alternative,
+        * [g2crowd.com](https://www.g2crowd.com/products/google-cloud-vision-api/competitors/alternatives)
+        * Use [Tensorflow](https://www.tensorflow.org/tutorials/images/image_recognition)
+
 > Tensorflow is library for machine learning which means that it has both high and low level APIs
+
 > Google Cloud AI on the other hand is set of ML products which under the hood probably uses Tensorflow with trained models and these are aimed for non ML experts.
 
 
@@ -78,7 +81,7 @@
 
 2. [MindSphere Services API](https://developer.mindsphere.io/apis/index.html)
 - IoT File
-..* File Service to read, write and delete files: upload, update and delete files associated to assets; store metadata information, and search for files by metadata.
+    * File Service to read, write and delete files: upload, update and delete files associated to assets; store metadata information, and search for files by metadata.
 ```
 https://gateway.eu1.mindsphere.io/api/iotfile/v3/files/a2385c36630a48e698622be19e3f5a3c/data_file.csv
 
@@ -88,13 +91,13 @@ Access Token=""
 ```
 
 - IoT Time Series
-..* Use Time Series to create, read, update and delete dynamic data. Since time series data are always related to an asset, the instance of an asset must have been created by you beforehand.
+    * Use Time Series to create, read, update and delete dynamic data. Since time series data are always related to an asset, the instance of an asset must have been created by you beforehand.
 
 - Notification Service
-..* Use APIs or graphical user interface to send information to your users & customers via e-mail, sms or push/scheduled notification.
+    * Use APIs or graphical user interface to send information to your users & customers via e-mail, sms or push/scheduled notification.
 
 - Trend Prediction	The Trend Prediction
-..* Service predicts future values for time series using linear and non-linear regression models. It is a forecasting framework, that has many useful applications in the area of Process & Condition Monitoring.
+    * Service predicts future values for time series using linear and non-linear regression models. It is a forecasting framework, that has many useful applications in the area of Process & Condition Monitoring.
 
 
 ## <a name="Extra"></a>Extra
