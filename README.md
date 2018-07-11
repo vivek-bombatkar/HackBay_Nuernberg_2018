@@ -1,4 +1,4 @@
-<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG"  width="130" height="100">
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_hackbay.JPG"  width="130" height="100">
 
 # HackBay_Nuernberg_2018    
 
@@ -26,8 +26,8 @@
 
 | Status | Example1 | Example1 | 
 | --- | --- |  --- |
-| Healthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_1.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_3.JPG" width="130" height="100" /> |
-| Unhealthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_4.JPG" width="130" height="100" /> |
+| Healthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_1.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_3.jpg" width="130" height="100" /> |
+| Unhealthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.jpg" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_4.jpg" width="130" height="100" /> |
 
 ## <a name="Solution"></a>Solution
 
@@ -40,7 +40,7 @@
 | Image | Text extract from image |
 | --- | --- |  
 |<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_1.JPG" width="130" height="100" /> |  sdasd |
-| <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.JPG" width="130" height="100" /> | dasdasd |
+| <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.jpg" width="130" height="100" /> | dasdasd |
 
 
 ## <a name="Extra"></a>Extra
