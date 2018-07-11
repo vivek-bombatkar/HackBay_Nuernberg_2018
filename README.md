@@ -7,7 +7,7 @@
 
 ## Index
 [1. Idea](#idea)  
-[2. Problem Statment](#ProblemStatment)
+[2. Problem Statment](#ProblemStatment)  
 [3. Solution](#Solution)  
 [4. Design](#design)  
 [5. Technology](#technology)    
@@ -26,6 +26,7 @@ bla bla bla
 | Healthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | 
 | Unhealthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> |
 
+## <a name="Solution"></a>Solution
 
 ## <a name="technology"></a>Technology
 
