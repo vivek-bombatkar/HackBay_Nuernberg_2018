@@ -1,4 +1,4 @@
-![Logo](https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG)
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG"  width="130" height="100">
 
 # HackBay_Nuernberg_2018    
 
@@ -8,10 +8,9 @@
 ## Index
 [1. Idea](#idea)  
 [2. Problem Statment](#ProblemStatment)
-[2. Solution](#Solution)  
-[3. Design](#design)  
-[4. Technology](#technology)    
-[5. The Code](#thecode)  
+[3. Solution](#Solution)  
+[4. Design](#design)  
+[5. Technology](#technology)    
 [6. MindSphere Setup and API](#MindSpheresetup)  
 [7. Furthre Enhancement](#FurthreEnhancement)
 [8. Thanks](#Thanks)
@@ -26,4 +25,14 @@ bla bla bla
 | --- | --- |  --- |
 | Healthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | 
 | Unhealthy | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> |
+
+
+## <a name="technology"></a>Technology
+
+
+| Image | Text extract from image |
+| --- | --- |  
+|<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> |  sdasd | 
+| <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/IMG_1541.JPG" width="130" height="100" /> | dasdasd |
+
 
