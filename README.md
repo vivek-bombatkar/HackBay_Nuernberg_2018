@@ -81,6 +81,10 @@
 |<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_1.JPG" width="130" height="100" /> |  Select a service;Guest;fiery;Workflow;Scanning;Copy;Fax;Fiery;Extended Service;Services Home;Services;Job Status;Machine Status;Energy Saver |
 |<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.jpg" width="130" height="100" /> | Software Upgrade in process.;The System will reboot after the upgrade is complete;Software Upgrade;Scan Engine;GHI;Print/ Copy Engine;Finishing;Copy Controller;Network Controller;PQRS;DO NOT turn off the machine;while upgrade is in progress.;The System will automatically;reboot and print out a status report;upon completion.;01 |
 
+
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/detect_text_demo.gif" >
+
+
 2. [MindSphere Services API](https://developer.mindsphere.io/apis/index.html)
 - IoT File
     * File Service to read, write and delete files: upload, update and delete files associated to assets; store metadata information, and search for files by metadata.
