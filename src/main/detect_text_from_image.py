@@ -1,13 +1,6 @@
 """
 Example Usage:
 python detect.py text ./resources/wakeupcat.jpg
-python detect.py labels ./resources/landmark.jpg
-python detect.py web ./resources/landmark.jpg
-python detect.py web-uri http://wheresgus.com/dog.JPG
-python detect.py web-geo ./resources/city.jpg
-python detect.py faces-uri gs://your-bucket/file.jpg
-python detect_pdf.py ocr-uri gs://python-docs-samples-tests/HodgeConj.pdf \
-gs://BUCKET_NAME/PREFIX/
 
 For more information, the documentation at
 https://cloud.google.com/vision/docs.
@@ -15,22 +8,16 @@ https://cloud.google.com/vision/docs.
 
 import argparse
 import io
-import re
 import os
 
-from google.cloud import storage
 from google.cloud import vision
 import datetime
 import time
-from google.protobuf import json_format
 
 
-# [START def_detect_text]
 def detect_text(path):
-    """Detects text in the file."""
     client = vision.ImageAnnotatorClient()
 
-    # [START migration_text_detection]
     with io.open(path, 'rb') as image_file:
         content = image_file.read()
 
@@ -47,23 +34,17 @@ def detect_text(path):
     data_file = open(file_name,apprnt_or_write)
     ts = time.time()
     current_time = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d_%H:%M:%S')
-    #print('Texts:')
-    # read only fist index from loop
     for text in texts:
         text_captured = ""
         for line in text.description.splitlines():
             text_captured += ";" + line
 
         data_file.write('{}{}\n'.format(current_time,text_captured))
-        #print('\n{}'.format(text.description))
         break
 
 
 
-# [START def_detect_text_uri]
 def detect_text_uri(uri):
-    """Detects text in the file located in Google Cloud Storage or on the Web.
-    """
     client = vision.ImageAnnotatorClient()
     image = vision.types.Image()
     image.source.image_uri = uri
@@ -79,7 +60,6 @@ def detect_text_uri(uri):
                     for vertex in text.bounding_poly.vertices])
 
         print('bounds: {}'.format(','.join(vertices)))
-# [END def_detect_text_uri]
 
 
 def run_local(args):

@@ -1,4 +1,4 @@
-<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_hackbay.JPG"  width="250" height="800">
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_hackbay.JPG"  width="250" height="80">
 
 # HackBay_Nuernberg_2018    
 <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/logo_nextGen.jpg" >
