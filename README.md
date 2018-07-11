@@ -102,6 +102,13 @@ Access Token=""
 - Trend Prediction	The Trend Prediction
     * Service predicts future values for time series using linear and non-linear regression models. It is a forecasting framework, that has many useful applications in the area of Process & Condition Monitoring.
 
+
+
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/mindsphere_screen.JPG" width="400" height="350" >
+
+
+
+
 ## <a name="FurthreEnhancement"></a>The Furthre
 
 - Sensor free data collection
