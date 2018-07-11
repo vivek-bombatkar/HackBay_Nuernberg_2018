@@ -24,7 +24,7 @@
 > `Dave` don't have to touch the device to get read its status.
 
 
-<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/big_picture.JPG" width="250" height="200" />
+<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/big_picture.JPG" />
 
 
 * What is `IoT`?
@@ -63,7 +63,7 @@
 ## <a name="technology"></a>Technology
 
 
-| Image | Text extract from image |
+| Image &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Text extract from image |
 | --------------------------- | --- |
 |<img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_1.JPG" width="130" height="100" /> |  Select a service;Guest;fiery;Workflow;Scanning;Copy;Fax;Fiery;Extended Service;Services Home;Services;Job Status;Machine Status;Energy Saver |
 | <img src="https://github.com/vivek-bombatkar/HackBay_Nuernberg_2018/raw/master/images/pic_2.jpg" width="130" height="100" /> | Software Upgrade in process.;The System will reboot after the upgrade is complete;Software Upgrade;Scan Engine;GHI;Print/ Copy Engine;Finishing;Copy Controller;Network Controller;PQRS;DO NOT turn off the machine;while upgrade is in progress.;The System will automatically;reboot and print out a status report;upon completion.;01 |
