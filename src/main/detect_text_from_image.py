@@ -20,6 +20,8 @@ import os
 
 from google.cloud import storage
 from google.cloud import vision
+import datetime
+import time
 from google.protobuf import json_format
 
 
@@ -43,11 +45,17 @@ def detect_text(path):
         apprnt_or_write = "w"
 
     data_file = open(file_name,apprnt_or_write)
+    ts = time.time()
+    current_time = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d_%H:%M:%S')
     #print('Texts:')
     # read only fist index from loop
     for text in texts:
-        data_file.write('\n{}'.format(text.description))
-        print('\n{}'.format(text.description))
+        text_captured = ""
+        for line in text.description.splitlines():
+            text_captured += ";" + line
+
+        data_file.write('{}{}\n'.format(current_time,text_captured))
+        #print('\n{}'.format(text.description))
         break
 
 
