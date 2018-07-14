@@ -1,1 +1,1 @@
-import detect_te
+# this will be calling the other modules 
